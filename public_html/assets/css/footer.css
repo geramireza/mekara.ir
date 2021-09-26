@@ -1,0 +1,9 @@
+/*footer styles*/
+.me-bg-footer{
+    background-color: #4d545d;
+}
+footer a:hover{
+    opacity: 0.8!important;
+    color: #ff9724!important;
+}
+

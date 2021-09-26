@@ -1,0 +1,27 @@
+.select2-selection{
+    height: calc(1.5em + .75rem + 2px)!important;
+    border: 1px solid #ced4da!important;
+    text-align: right!important;
+    width: 100%!important;
+}
+.select2-selection__rendered{
+    text-align: right!important;;
+    line-height: 35px!important;
+    font-size: 14px!important;
+    height: 100%!important;
+}
+.select2-results{
+    float: right;
+    width: 100%!important;
+}
+.select2-results__options{
+    float: right;
+    width:100%;
+}
+.select2-results__option{
+    float: right;
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+}

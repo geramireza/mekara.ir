@@ -1,0 +1,21 @@
+@import url("me-select2.css");
+
+@media (max-width: 992px) {
+    .me-img-width-height{
+        width: 100px!important;
+        height: 100px!important;
+    }
+}
+@media (max-width: 576px) {
+    .me-img-width-height{
+        width: 100px!important;
+        height: 100px!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .me-img-width-height{
+        width: 150px!important;
+        height: 150px!important;
+    }
+}

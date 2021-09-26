@@ -1,0 +1,44 @@
+.me-icon-chevron-search-sidebar-position{
+    position: absolute;
+    top:18px;
+    left:13px;
+    z-index:50;
+}
+.me-px-6{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.me-height{
+    height: 282px;
+}
+.me-more-item-position{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: 50;
+}
+.me-scrollbar
+{
+    float: left;
+    height: 100%;
+    overflow-y: auto;
+}
+#me-scrollbar::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+#me-scrollbar::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#me-scrollbar::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    height: 25px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #c1c1c1;
+}

@@ -1,0 +1,194 @@
+
+@font-face
+{
+    font-family: 'Iran';
+    src: url('../fonts/IRANSansWeb200.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+@font-face
+{
+    font-family: 'IranBold';
+    src: url('../fonts/IRANSansWeb400.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+.Iran10{
+    font-family: Iran;
+    font-size: 10px;
+}
+
+.Iran11{
+    font-family: Iran;
+    font-size: 11px;
+}
+
+.Iran12{
+    font-family: Iran;
+    font-size: 12px;
+}
+
+.Iran13{
+    font-family: Iran;
+    font-size: 13px;
+}
+.Iran14{
+    font-family: Iran;
+    font-size: 14px;
+}
+.Iran15{
+    font-family: Iran;
+    font-size: 15px;
+}
+.Iran16{
+    font-family: Iran;
+    font-size: 16px;
+}
+
+.Iran17{
+    font-family: Iran;
+    font-size: 17px;
+}
+
+.Iran18{
+    font-family: Iran;
+    font-size: 18px;
+}
+.Iran20{
+    font-family: Iran;
+    font-size: 25px;
+}
+.IranBold11{
+    font-family: IranBold;
+    font-size: 11px;
+}
+
+.IranBold12{
+    font-family: IranBold;
+    font-size: 12px;
+}
+
+.IranBold13{
+    font-family: IranBold;
+    font-size: 13px;
+}
+
+.IranBold14{
+    font-family: IranBold;
+    font-size: 14px;
+}
+
+.IranBold15{
+    font-family: IranBold;
+    font-size: 15px;
+}
+.IranBold16{
+    font-family: IranBold;
+    font-size: 16px;
+}
+
+.IranBold17{
+    font-family: IranBold;
+    font-size: 17px;
+}
+
+.IranBold18{
+    font-family: IranBold;
+    font-size: 18px;
+}
+
+.IranBold20{
+    font-family: IranBold;
+    font-size: 20px;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-300{
+    font-weight: 300;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.fw-800{
+    font-weight: 800;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+
+@media (max-width: 576px) {
+
+    .me-font-Iran12{
+        font-size: 12px;
+        font-family: Iran;
+    }
+    .me-font-IranBold12{
+        font-size: 12px;
+        font-family: IranBold;
+    }
+    .me-font-Iran13{
+        font-size: 13px;
+        font-family: Iran;
+    }
+    .me-font-IranBold13{
+        font-size: 13px;
+        font-family: IranBold;
+    }
+    .me-font-Iran14{
+        font-size: 14px;
+        font-family: Iran;
+    }
+    .me-font-IranBold14{
+        font-size: 14px;
+        font-family: IranBold;
+    }
+    .me-font-Iran15{
+        font-size: 15px;
+        font-family: Iran;
+    }
+    .me-font-IranBold15{
+        font-size: 15px;
+        font-family: IranBold;
+    }
+
+    .me-font-Iran16{
+        font-size: 16px;
+        font-family: Iran;
+    }
+    .me-font-IranBold16{
+        font-size: 16px;
+        font-family: IranBold;
+    }
+
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (min-width: 992px) {
+    .me-font-IranBold25{
+        font-size: 25px;
+        font-family: IranBold;
+    }
+}

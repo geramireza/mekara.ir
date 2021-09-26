@@ -1,0 +1,13 @@
+#cke_ckeditor{
+    width: 100%!important;
+}
+.cke_1,.cke_top,.cke_1,.cke_combo_button,.cke_1,.cke_toolgroup {
+    background: #fff none !important;
+}
+
+.cke_wysiwyg_frame{
+    font-size: 16px;
+    /*min-height: 300px!important;*/
+    float: right;
+    width:95%;
+}

@@ -1,0 +1,30 @@
+@import url("me-select2.css");
+
+.me-manage-tabs-color{
+    border-bottom: 3px solid #dc3545;
+    color: #dc3545 !important;
+}
+.me-manage-tabs a:hover{
+    border-bottom: 3px solid #dc3545;
+    color: #dc3545 !important;
+}
+
+.me-border-bottom-strock{
+    border-bottom: 3px solid #ccc;
+}
+
+.me-btn-outline-book{
+    border-color: #b0b0b0;
+    color: #8e8e8e;
+}
+.me-btn-outline-booked{
+    color: #db8f00;
+    border-color: #db8f00;
+}
+.me-btn-bookmark:hover{
+    color: #fff;
+    background-color: #db8f00;
+}
+.me-max-width-660{
+    max-width: 660px!important;
+}
