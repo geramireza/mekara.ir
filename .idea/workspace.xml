@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a271cd-444f-4e31-825f-efa818c01ff2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kara/app/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/kara/app/Constants.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -591,7 +591,7 @@
       <workItem from="1632609021411" duration="596000" />
       <workItem from="1632633261672" duration="3429000" />
       <workItem from="1632666859963" duration="703000" />
-      <workItem from="1632675013948" duration="1034000" />
+      <workItem from="1632675013948" duration="2584000" />
     </task>
     <servers />
   </component>
