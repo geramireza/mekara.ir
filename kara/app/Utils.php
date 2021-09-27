@@ -40,7 +40,7 @@ class Utils
         $imgThumbnail = Image::make($imgFile->getRealPath())->resize(60,50);
         $imgThumbnail->save($thumbnailPath);
 
-        $filePath = Constants:: BASE_URL . "storage/images/resize/" . $filenametostore;
+        $filePath = MekaraConfig:: BASE_URL . "storage/images/resize/" . $filenametostore;
         return $filePath;
     }
     public static function uploadImageString($imgString)
@@ -79,7 +79,7 @@ class Utils
         $imgThumbnail =  Image::make($img)->resize(60,50);
         $imgThumbnail->save($thumbnailPath);
 
-        $filePath = Constants:: BASE_URL . "storage/images/resize/" . $filenametostore;
+        $filePath = MekaraConfig:: BASE_URL . "storage/images/resize/" . $filenametostore;
         return $filePath;
 
     }
@@ -104,7 +104,7 @@ class Utils
         $imgThumbnail = Image::make($imgFile->getRealPath())->resize(60,50);
         $imgThumbnail->save($thumbnailPath);
 
-        $filePath = Constants:: BASE_URL . "storage/images/resize/" . $filenametostore;
+        $filePath = MekaraConfig:: BASE_URL . "storage/images/resize/" . $filenametostore;
         return $filePath;
     }
     public static function deleteImagePost($image)

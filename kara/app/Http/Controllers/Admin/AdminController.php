@@ -8,6 +8,7 @@ use App\City;
 use App\Constants;
 use App\Contact;
 use App\Helpers\Auth;
+use App\MekaraConfig;
 use App\Post;
 use App\Report;
 use App\User;
@@ -299,8 +300,8 @@ class AdminController extends Controller
 
 //        if ($result && $checked && $firstTime)
 //        {
-//            $sms = new Sms(Constants::API_KEY, Constants::SECURITY_KEY,Constants::API_URL,Constants::LINE_NUMBER);
-//            $sms->ultraFastSend($user->phone,$user->phone,Constants::PARAMETER_VERIFY_POST2,Constants::TEMPLATE_ID_VERIFY_POST2);
+//            $sms = new Sms(MekaraConfig::API_KEY, MekaraConfig::SECURITY_KEY,MekaraConfig::API_URL,MekaraConfig::LINE_NUMBER);
+//            $sms->ultraFastSend($user->phone,$user->phone,MekaraConfig::PARAMETER_VERIFY_POST2,MekaraConfig::TEMPLATE_ID_VERIFY_POST2);
 //        }
 
         return response()->json($result);

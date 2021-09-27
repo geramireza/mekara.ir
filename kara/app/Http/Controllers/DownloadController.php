@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Constants;
+use App\MekaraConfig;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
@@ -10,7 +11,7 @@ class DownloadController extends Controller
 {
     public function download()
     {
-        $appUrl =  Constants::BASE_URL ."Kara.apk";
+        $appUrl =  MekaraConfig::BASE_URL ."Kara.apk";
         return Redirect::to($appUrl);
     }
 

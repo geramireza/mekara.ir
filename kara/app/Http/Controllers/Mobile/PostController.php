@@ -6,6 +6,7 @@ use App\Category;
 use App\City;
 use App\Helpers\Auth;
 use App\Http\Controllers\Controller;
+use App\MekaraConfig;
 use App\Payment;
 use App\Post;
 use App\PostView;
@@ -94,7 +95,7 @@ class PostController extends Controller
             unset($post->created_at);
             $post->isMarked = $isMarked;
             $post->ownerPhone = $owner->phone;
-            $post->link = Constants::BASE_URL."posts/".$post->slug;
+            $post->link = MekaraConfig::BASE_URL."posts/".$post->slug;
             return response()->json($post);
         }
         else
@@ -193,7 +194,7 @@ class PostController extends Controller
             $owner = User::find($post->user_id);
             $post->ownerPhone = $owner->phone;
             $post->categoryTitle = Category::find($post->categoryId)->title;
-            $post->link = Constants::BASE_URL."posts/".$post->slug;
+            $post->link = MekaraConfig::BASE_URL."posts/".$post->slug;
             return response()->json($post);
         }
         else

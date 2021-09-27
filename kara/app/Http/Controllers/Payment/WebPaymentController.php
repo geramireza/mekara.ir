@@ -8,6 +8,7 @@ use App\Post;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\MekaraConfig;
 use RealRashid\SweetAlert\Facades\Alert;
 use SoapClient;
 
@@ -21,16 +22,16 @@ class WebPaymentController extends Controller
         $description = Constants::STR_PAY_DESCRIPTION;
         $mobile = getPhone();
         $data = [
-            'MerchantID' =>Constants::ZARINPAL_MERCHANT_ID,
+            'MerchantID' =>MekaraConfig::ZARINPAL_MERCHANT_ID,
             'Amount' => $amount,
             'Description' => $description,
             'Mobile' =>$mobile,
-            'CallbackURL' =>Constants::ZARINPAL_CALLBACK_URL .$post->id
+            'CallbackURL' =>MekaraConfig::ZARINPAL_CALLBACK_URL .$post->id
         ];
 
         if ($amount != 0)
         {
-            $client = new SoapClient(Constants::ZARINPAL_PURCHASE_URL,["encoding" => "UTF-8"]);
+            $client = new SoapClient(MekaraConfig::ZARINPAL_PURCHASE_URL,["encoding" => "UTF-8"]);
             $result = $client->paymentRequest($data);
             if ($result->Status == 100){
                 \App\Payment::create([
@@ -44,7 +45,7 @@ class WebPaymentController extends Controller
                     "gate" => "zarinpalWeb",
                     "transaction_id" => $result->Authority
                 ]);
-                Header('Location:' . Constants::ZARINPAL_PAYMENT_URL . $result->Authority);
+                Header('Location:' . MekaraConfig::ZARINPAL_PAYMENT_URL . $result->Authority);
                 exit(); // this is important;
             }
             else
@@ -66,14 +67,14 @@ class WebPaymentController extends Controller
         $post = Post::find($postId);
         $payment = \App\Payment::where("post_id",$postId)->where("transaction_id",$authority)->get()->last();
         $data = [
-            'MerchantID' =>Constants::ZARINPAL_MERCHANT_ID,
+            'MerchantID' =>MekaraConfig::ZARINPAL_MERCHANT_ID,
             'Amount' => $payment->amount,
             'Authority' =>$authority
         ];
 
         if ($status == "OK")
         {
-            $client = new SoapClient(Constants::ZARINPAL_PURCHASE_URL,["encoding" => "UTF-8"]);
+            $client = new SoapClient(MekaraConfig::ZARINPAL_PURCHASE_URL,["encoding" => "UTF-8"]);
             $result = $client->paymentVerification($data);
             if ($result->Status == 100)
             {

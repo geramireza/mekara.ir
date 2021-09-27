@@ -50,14 +50,14 @@ class User extends Authenticatable
     public static function sendMessage($phone,$password)
     {
             $message = Constants::KEY_TEXT_MESSAGE .$password;
-            $sms = new Sms(Constants::API_KEY, Constants::SECURITY_KEY,Constants::API_URL,Constants::LINE_NUMBER);
+            $sms = new Sms(MekaraConfig::API_KEY, MekaraConfig::SECURITY_KEY,MekaraConfig::API_URL,MekaraConfig::LINE_NUMBER);
             return $sms->sendMessage([$phone],[$message]);
     }
 
     public static function ultraFastSend($phone,$password)
     {
-        $sms = new Sms(Constants::API_KEY, Constants::SECURITY_KEY,Constants::API_URL);
-        return $sms->ultraFastSend($phone,$password,Constants::PARAMETER_VERIFY_CODE,Constants::TEMPLATE_ID_VERIFY_CODE);
+        $sms = new Sms(MekaraConfig::API_KEY, MekaraConfig::SECURITY_KEY,MekaraConfig::API_URL);
+        return $sms->ultraFastSend($phone,$password,MekaraConfig::PARAMETER_VERIFY_CODE,MekaraConfig::TEMPLATE_ID_VERIFY_CODE);
     }
 
 }

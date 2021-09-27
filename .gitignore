@@ -1,5 +1,4 @@
 
-
 # Created by https://www.toptal.com/developers/gitignore/api/laravel
 # Edit at https://www.toptal.com/developers/gitignore?templates=laravel
 
@@ -20,12 +19,6 @@ public/hot
 # Laravel 5 & Lumen specific with changed public path
 public_html/storage
 public_html/hot
-kara/vendor
-public_html/vendor
-public_html/kara.apk
-public_html/Kara.apk
-public_html/test.php
-.idea
 
 storage/*.key
 .env
@@ -33,5 +26,15 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+
+# my ignore files
+kara/vendor
+kara/app/MekaraConfig.php
+public_html/vendor
+kara/node_modules
+.idea
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/laravel

@@ -165,7 +165,7 @@
                                                 <i class="fas fa-share-alt float-right IranBold18 fw-800"></i>
                                                 <div class=" float-right mx-2 IranBold14 fw-400">لینک به اشتراک گذاری</div>
                                                 </div>
-                                                <div class="float-left p-2 IranBold14 fw-400 share_link">{{ App\Constants::BASE_URL.$post->post_token }}</div>
+                                                <div class="float-left p-2 IranBold14 fw-400 share_link">{{ App\MekaraConfig::BASE_URL.$post->post_token }}</div>
                                             </span>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
                                                 <i class="fas fa-share-alt float-right IranBold18 fw-800"></i>
                                                 <div class=" float-right mx-2 IranBold14 fw-400 bg-light">لینک به اشتراک گذاری</div>
                                                 </div>
-                                                <div class="float-left p-2 IranBold14 fw-400 share_link">{{ App\Constants::BASE_URL.$post->post_token }}</div>
+                                                <div class="float-left p-2 IranBold14 fw-400 share_link">{{ App\MekaraConfig::BASE_URL.$post->post_token }}</div>
                                             </span>
 
 
