@@ -35,7 +35,7 @@ class UserController extends Controller
         {
             Session::put(Constants::KEY_PASSWORD,$password);
             Session::put(Constants::KEY_EXPIRED_AT_PASSWORD,time() + 60 );
-            $result["result"] = User::ultraFastSend($phone,$password);
+            $result["result"] = User::sendMessage($phone,$password);
         }
         return response()->json($result);
     }
